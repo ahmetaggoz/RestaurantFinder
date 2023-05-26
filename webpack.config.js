@@ -3,8 +3,11 @@
 const path = require('path')
 const autoprefixer = require('autoprefixer')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const fs = require('fs');
+const os = require('os');
 
-module.exports = {
+module.exports  = {
+  
   mode: 'development',
   entry: './src/js/main.js',
   output: {
@@ -17,7 +20,7 @@ module.exports = {
     hot: true
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' })
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
   ],
   module: {
     rules: [
@@ -52,3 +55,4 @@ module.exports = {
     ]
   }
 }
+

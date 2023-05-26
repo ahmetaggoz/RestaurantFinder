@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack build --mode=production",
@@ -14,6 +15,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "css-loader": "^6.7.4",
+    "dotenv-webpack": "^8.0.1",
     "html-webpack-plugin": "^5.5.1",
     "postcss-loader": "^7.3.1",
     "sass": "^1.62.1",
@@ -25,6 +27,20 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.7",
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "crypto-browserify": "^3.12.0",
+    "dotenv": "^16.0.3",
+    "env-cmd": "^10.1.0",
+    "fs": "^0.0.1-security",
+    "mongodb": "^5.5.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "os": "^0.1.2",
+    "path": "^0.12.7",
+    "stream-browserify": "^3.0.0"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   }
 }
